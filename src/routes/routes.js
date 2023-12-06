@@ -17,8 +17,8 @@ routes.delete('/comentarios/:id', admController.deletarComentario)
 routes.delete('/places/:id', admController.deletarPlace)
 routes.delete('/respostas/:id', admController.deletarResposta)
 
-routes.post('aceitar', admController.aceitarRequest)
-routes.post('recusar', admController.recusarRequest)
+routes.post('/aceitar/:id', admController.aceitarRequest)
+routes.post('/recusar/:id', admController.recusarRequest)
 
 
 export default routes;
